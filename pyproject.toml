@@ -1,0 +1,13 @@
+[project]
+name = "LoRA-SLM-Text-To-SQL"
+version = "0.1.0"
+description = "Parameter‑efficient fine‑tuning of small language models for the WikiSQL text‑to‑SQL domain using LoRA-based techniques."
+requires-python = ">=3.12"
+dependencies = [
+    "transformers==4.57.3",
+    "datasets==4.0.0",
+    "peft==0.18.0",
+    "torch==2.9.0",
+    "openai==2.15.0",
+    "tenacity==9.1.4"
+]
