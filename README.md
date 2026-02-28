@@ -26,7 +26,7 @@ To set up the repository properly, follow these steps:
 
 **2.** **Create the Data Directory**  
    - Before running the pipeline, create a `data/` folder in the project root.  
-   - Inside `data/`, place the original WikiSQL dataset files obtained from the official distribution.
+   - Inside `data/`, store the original WikiSQL dataset files obtained from the official distribution.
 
 **3.** **Execute the Pipeline with Makefile**  
 
