@@ -42,9 +42,9 @@ To set up the repository properly, follow these steps:
 
   - Creates a Python virtual environment and installs all required dependencies through the `uv` package manager.
   - Validates the presence of mandatory environment variables required for model access and LLM‑based evaluation.
-  - Loads the WikiSQL dataset and formats it into Hugging Face Dataset objects.
+  - Loads the WikiSQL dataset and formats it into Hugging Face Dataset objects for the subsequent fine‑tuning and evaluation pipeline.
   - Executes parameter‑efficient fine‑tuning of T5, Qwen2.5, and Llama 3.x models via LoRA, storing the resulting adapters in the `models/` directory.
-  - Computes evaluation metrics, including logical‑form accuracy and LLM‑as‑a‑judge assessments, to validate the semantic correctness of the generated SQL queries.
+  - Computes evaluation metrics, including logical‑form accuracy and LLM‑as‑a‑judge assessments, to validate the correctness of the generated SQL queries.
 
 ## License  
 
