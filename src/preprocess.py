@@ -38,7 +38,6 @@ class WikiSQLSeq2SeqFormatter:
         to_dataset() -> Dataset:
             Converts the parsed pairs into a Hugging Face Dataset object,
             ready for seq2seq fine-tuning with question-to-SQL mappings.
-    
     """
 
     split: str
@@ -140,7 +139,6 @@ class WikiSQLCausalLMInstructionFormatter:
         to_dataset() -> Dataset:
             Converts the parsed prompts into a Hugging Face Dataset object,
             ready for causal LM fine-tuning with instruction-response pairs.
-    
     """
 
     split: str
@@ -246,7 +244,6 @@ class WikiSQLCausalLMChatFormatter:
         to_dataset() -> Dataset:
             Converts the parsed prompts into a Hugging Face Dataset object,
             ready for causal LM fine-tuning with chat-style prompt representations.
-    
     """
 
     split: str

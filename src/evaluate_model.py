@@ -91,7 +91,6 @@ class WikiSQLT5Evaluator:
             Generates SQL predictions for the selected split, computes exact-match
             logical‑form accuracy, and returns record‑level structures containing
             predicted and reference SQL queries for downstream evaluation.
-    
     """
 
     device: torch.device = field(init=False)
@@ -197,7 +196,6 @@ class WikiSQLQwenEvaluator:
             Generates SQL predictions for the selected split, computes exact‑match
             logical‑form accuracy, and returns record‑level structures containing
             predicted and reference SQL queries for downstream evaluation.
-    
     """
 
     device: torch.device = field(init=False)
@@ -320,7 +318,6 @@ class WikiSQLLlamaEvaluator:
             Generates SQL predictions for the selected split, computes exact‑match
             logical‑form accuracy, and returns record‑level structures containing
             predicted and reference SQL queries for downstream evaluation.
-    
     """
 
     device: torch.device = field(init=False)
@@ -451,7 +448,6 @@ class WikiSQLLLMJudgeEvaluator:
             Executes the complete LLM‑as‑a‑Judge evaluation pipeline, computes the
             overall equivalence accuracy, and returns both the annotated record set
             and the aggregate accuracy metric.
-    
     """
 
     deployment: str = "gpt-4.1"

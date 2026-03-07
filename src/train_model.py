@@ -57,7 +57,6 @@ class WikiSQLT5LoRATrainer:
 
         train() -> None:
             Executes the complete fine-tuning pipeline.
-    
     """
 
     model_name: str = "t5-base"
@@ -201,7 +200,6 @@ class WikiSQLQwenLoRATrainer:
 
         train() -> None:
             Executes the complete fine-tuning pipeline.
-    
     """
 
     model_name: str = "Qwen/Qwen2.5-3B-Instruct"
@@ -358,7 +356,6 @@ class WikiSQLLlamaLoRATrainer:
 
         train() -> None:
             Executes the complete fine-tuning pipeline.
-    
     """
 
     model_name: str = "meta-llama/Llama-3.2-3B"
