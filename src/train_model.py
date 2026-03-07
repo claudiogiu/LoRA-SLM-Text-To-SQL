@@ -34,7 +34,7 @@ warnings.filterwarnings("ignore")
 class WikiSQLT5LoRATrainer:
     """
     Interface for fine-tuning models in the T5 family on the WikiSQL dataset
-    using standard FP16 LoRA adaptation within an encoder–decoder (seq2seq) workflow.
+    using FP16 LoRA adaptation within an encoder–decoder (seq2seq) workflow.
 
     Attributes:
         model_name (str): Name or path of the pretrained T5 model to load.
@@ -178,7 +178,7 @@ class WikiSQLT5LoRATrainer:
 class WikiSQLQwenLoRATrainer:
     """
     Interface for fine-tuning models in the Qwen2.5 family on the WikiSQL dataset
-    using standard FP16 LoRA adaptation within a decoder-only (causal LM) workflow.
+    using FP16 LoRA adaptation within a decoder-only (causal LM) workflow.
 
     Attributes:
         model_name (str): Name or path of the pretrained Qwen2.5 model to load.
@@ -335,7 +335,7 @@ class WikiSQLQwenLoRATrainer:
 class WikiSQLLlamaLoRATrainer:
     """
     Interface for fine-tuning models in the Llama 3.x family on the WikiSQL dataset
-    using standard FP16 LoRA adaptation within a decoder-only (causal LM) workflow.
+    using FP16 LoRA adaptation within a decoder-only (causal LM) workflow.
 
     Attributes:
         model_name (str): Name or path of the pretrained Llama 3.x model to load.
