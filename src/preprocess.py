@@ -27,8 +27,8 @@ class WikiSQLSeq2SeqFormatter:
             Loads table definitions from JSONL into a dictionary keyed by table_id.
 
         _build_sql(row: dict, table: dict) -> str:
-            Constructs a human-readable SQL query from the structured representation
-            of a WikiSQL row and its associated table schema.
+            Reconstructs the SQL query from the structured WikiSQL annotation
+            and the associated table schema.
 
         _parse_jsonl() -> List[Dict[str, str]]:
             Parses the JSONL file for the chosen split and returns a list of
@@ -129,8 +129,8 @@ class WikiSQLCausalLMInstructionFormatter:
             Loads table definitions from JSONL into a dictionary keyed by table_id.
         
         _build_sql(row: dict, table: dict) -> str:
-            Constructs a human-readable SQL query from the structured representation
-            of a WikiSQL row and its associated table schema.
+            Reconstructs the SQL query from the structured WikiSQL annotation
+            and the associated table schema.
         
         _parse_jsonl() -> List[Dict[str, str]]:
             Parses the JSONL file for the chosen split and returns a list of
@@ -235,8 +235,8 @@ class WikiSQLCausalLMChatFormatter:
             Loads table definitions from JSONL into a dictionary keyed by table_id.
         
         _build_sql(row: dict, table: dict) -> str:
-            Constructs a human-readable SQL query from the structured representation
-            of a WikiSQL row and its associated table schema.
+            Reconstructs the SQL query from the structured WikiSQL annotation
+            and the associated table schema.
         
         _parse_jsonl() -> List[Dict[str, str]]:
             Parses the JSONL file for the chosen split and returns a list of
