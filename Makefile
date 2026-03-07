@@ -1,8 +1,10 @@
 .PHONY: all setup venv train evaluate
 
+# Master target: end-to-end workflow execution
 all: setup train evaluate
 	@echo "[ALL] End-to-end execution completed."
 
+# Step 1: Environment setup
 setup: venv
 	@echo "[SETUP] Environment initialization completed. Dependency management and resource provisioning finalized."
 
@@ -37,12 +39,13 @@ ifndef HUGGINGFACE_HUB_TOKEN
 $(error "[ERROR] Mandatory variable 'HUGGINGFACE_HUB_TOKEN' is not defined in .env.")
 endif
 
+# Step 2: Training phase execution
 train:
 	uv run python src/train_model.py
 	@sleep 20
 	@echo "[TRAIN] Training phase successfully completed."
 
-
+# Step 3: Evaluation phase execution
 evaluate:
 	uv run python src/evaluate_model.py
 	@echo "[EVALUATE] Evaluation phase successfully completed."
